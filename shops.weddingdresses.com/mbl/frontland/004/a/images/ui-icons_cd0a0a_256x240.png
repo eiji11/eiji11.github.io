@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="http://cdn.optimizely.com/js/3435110496.js"></script>
+<script type="text/JavaScript">
+<!--
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+//   -->
+</script>
+<title>Simply Bridal Wedding Photography</title>
+</head>
+<body onload="JavaScript:timedRefresh(2000);">
+Please wait...</body>
+</html>
