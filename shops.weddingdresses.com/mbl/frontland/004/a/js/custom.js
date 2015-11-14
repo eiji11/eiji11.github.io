@@ -307,8 +307,8 @@ function updateWedding(type, val, val2){
 				}
 				else{
 					$(".step5").addClass("inactive");
-					$(".step6").show().addClass("active").removeClass("inactive");
-					$('.step6 .step').css("top", "42.5%");
+					$('.step6 .step').css("top", "42.5%").hide();
+					$('.step6').show();
 					/*$("input").focus();*/
 					$(".set_name").html(name);
 

@@ -22,33 +22,15 @@ $(document).ready(function(){
 });
 
 function animation7(){
-	$('#page-01').hide();
-	$('#page-02').removeClass('init-hidden');
-	$('#input-searcher-name-02').val($('#input-searcher-name').val());
 
 	$('#interstitial-overlay').animate({
 		transform: 'scale(0.5)',
 		opacity: 0.0
 	}, 500).animate({
 		transform: 'scale(0)',
-	}, 1000, function(){
-		$('#input-searcher-email').on("input", function(){
-			var content = $(this).val();
-			var searcherEmailNext = $('#searcher-email-next');
-			if (content.length > 0)
-			{
-				searcherEmailNext.animate({
-					transform: 'scale(1.0)'
-				}, 500, 'easeInOutElastic');
-			}
-			else
-			{
-				searcherEmailNext.animate({
-					transform: 'scale(0.0)'
-				}, 500, 'easeInOutElastic');
-			}
-		});
-
+	}, 1000, function() {
+		$(".step6").show().addClass("active").removeClass("inactive");
+		$('.step6 .step').show();
 	});
 };
 
